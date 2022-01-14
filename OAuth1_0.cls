@@ -21,8 +21,8 @@ public class OAuth1_0 {
 	public void setConsumerSecret(String value) { consumerSecret = value; }
     
     public void doRequest(String consumerKey, String consumerSecret, String endPoint){
-        consumerKey = leadSetting.Client_Key__c;
-		    consumerSecret = leadSetting.Client_Secret__c;
+        consumerKey = consumerKey;
+	onsumerSecret = consumerSecret;
        
         Http h = new Http();
         HttpRequest req = new HttpRequest();
